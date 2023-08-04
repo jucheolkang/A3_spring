@@ -12,7 +12,7 @@ import lombok.*;
 public class Members {
     // 회원 id,pw,이름을 저장
     @Id
-    private String user_id;
+    private int user_id;
     private String user_pw;
 
 
