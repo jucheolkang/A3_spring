@@ -24,14 +24,14 @@ class MembersDAOTest {
     public void saveTest() {
         Members userEntity = Members.builder()
                 .user_name("jucheol")
-                .user_id(1234)
+                .user_id("1234")
                 .user_pw("ju9877")
                 .build();
 
         Members savedUserEntity = userRepository.save(userEntity);
         System.out.println("userEntity >>>" + userEntity.toString());
         System.out.println("savedUserEntity >>>" + savedUserEntity.toString());
-        Assertions.assertEquals(1234, savedUserEntity.getUser_id());
+        Assertions.assertEquals("1234", savedUserEntity.getUser_id());
         Assertions.assertEquals("jucheol", savedUserEntity.getUser_name());
         Assertions.assertEquals("ju9877", savedUserEntity.getUser_pw());
 

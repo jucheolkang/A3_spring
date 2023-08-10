@@ -14,7 +14,7 @@ public class Members {
     // 회원 id,pw,이름을 저장
     @Id
     /*@GeneratedValue(strategy = GenerationType.IDENTITY)*/ // id 값을 자동으로 넣어준다(여기서는 필요 없다)
-    private Integer user_id;
+    private String user_id;
     @Column(nullable = false)
     private String user_pw;
     @Column(nullable = false)
