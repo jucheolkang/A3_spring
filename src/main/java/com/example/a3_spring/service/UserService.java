@@ -14,9 +14,15 @@ public class UserService {
 
     @Transactional
     public String save(MembersDto membersDto){
+//        validateDuplicateMember(membersDto);
         return membersDAO.save(membersDto.toEntity()).toString();
     }
-
+    /*private void validateDuplicateMember(MembersDto member) {
+        Members findMember = membersDAO.(member.getUser_id());
+        if (findMember != null) {
+            throw new IllegalStateException("이미 가입된 회원입니다.");
+        }
+    }*/
 
 
 

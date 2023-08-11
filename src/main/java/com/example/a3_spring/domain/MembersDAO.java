@@ -3,7 +3,7 @@ package com.example.a3_spring.domain;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MembersDAO extends JpaRepository<Members,String> {
-
+//    Members findAllByUser_id(String user_id); // 이메일 중복 검사
 }
 
 /*
