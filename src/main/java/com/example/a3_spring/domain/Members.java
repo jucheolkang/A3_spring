@@ -15,9 +15,13 @@ public class Members {
     @Id
     /*@GeneratedValue(strategy = GenerationType.IDENTITY)*/ // id 값을 자동으로 넣어준다(여기서는 필요 없다)
     private String user_id;
+
     @Column(nullable = false)
     private String user_pw;
+
     @Column(nullable = false)
     private String user_name;
+
+
 
 }
